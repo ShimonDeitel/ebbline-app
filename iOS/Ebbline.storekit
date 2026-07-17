@@ -1,0 +1,53 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "EBBLINE_STOREKIT_CONFIG",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "22600001",
+      "localizations" : [],
+      "name" : "Ebbline Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "ebbline_pro_monthly_id",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Multiple income streams, the AI shortfall forecaster, and live bill-aware recalculation.",
+              "displayName" : "Ebbline Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.shimondeitel.ebbline.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Ebbline Pro Monthly",
+          "subscriptionGroupID" : "22600001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
