@@ -31,6 +31,8 @@ struct AddBillView: View {
                     Toggle("Already paid", isOn: $isPaid)
                 }
             }
+            .scrollDismissesKeyboard(.interactively)
+            .dismissKeyboardOnTap()
             .navigationTitle("Log Bill")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

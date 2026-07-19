@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Bespoke aqua-to-teal palette. Coral is reserved strictly for
 /// shortfall/warning states — it never appears anywhere else in the UI.
@@ -48,5 +49,16 @@ extension View {
     /// Applies the standard Ebbline glass-panel background.
     func ebblineGlass(cornerRadius: CGFloat = 24) -> some View {
         self.background(EbblineTheme.glassPanel(cornerRadius: cornerRadius))
+    }
+
+    /// Lets the user dismiss the keyboard by tapping anywhere on the screen,
+    /// outside the focused text field. Uses `simultaneousGesture` so it never
+    /// swallows taps on buttons, toggles, or other controls in the same view.
+    func dismissKeyboardOnTap() -> some View {
+        simultaneousGesture(
+            TapGesture().onEnded {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
+        )
     }
 }

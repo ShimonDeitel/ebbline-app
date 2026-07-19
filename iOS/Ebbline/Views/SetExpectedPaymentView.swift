@@ -47,6 +47,8 @@ struct SetExpectedPaymentView: View {
                     }
                 }
             }
+            .scrollDismissesKeyboard(.interactively)
+            .dismissKeyboardOnTap()
             .navigationTitle("Next Expected Payment")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

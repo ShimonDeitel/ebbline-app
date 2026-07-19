@@ -45,6 +45,8 @@ struct AddIncomeView: View {
                     }
                 }
             }
+            .scrollDismissesKeyboard(.interactively)
+            .dismissKeyboardOnTap()
             .navigationTitle("Log Income")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
